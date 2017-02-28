@@ -1,0 +1,52 @@
+{
+  "name": "mathjax-node-cli",
+  "version": "1.0.0",
+  "description": "CLI tools for calling mathjax-node",
+  "keywords": [
+    "mathjax-node",
+    "cli",
+    "MathJax",
+    "math",
+    "svg",
+    "HTML",
+    "MathML",
+    "TeX",
+    "AsciiMath"
+  ],
+  "maintainers": [
+    "MathJax Consortium <info@mathjax.org> (http://www.mathjax.org)"
+  ],
+  "bugs": {
+    "url": "http://github.com/mathjax/mathjax-node-cli/issues"
+  },
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mathjax/mathjax-node-cli.git"
+  },
+  "dependencies": {
+    "mathjax-node": "1.0.0-beta.0",
+    "yargs": "3.*"
+  },
+  "scripts": {
+    "test": "tape test/*.js"
+  },
+  "bin": {
+    "am2html": "./bin/am2html",
+    "am2mml": "./bin/am2mml",
+    "mml2html": "./bin/mml2html",
+    "mml2mml": "./bin/mml2mml",
+    "mml2svg-html5": "./bin/mml2svg-html5",
+    "tex2htmlcss": "./bin/tex2htmlcss",
+    "tex2svg": "./bin/tex2svg",
+    "am2htmlcss": "./bin/am2htmlcss",
+    "am2svg": "./bin/am2svg",
+    "mml2htmlcss": "./bin/mml2htmlcss",
+    "mml2svg": "./bin/mml2svg",
+    "tex2html": "./bin/tex2html",
+    "tex2mml": "./bin/tex2mml"
+  },
+  "devDependencies": {
+    "tape": "^4.0.3"
+  }
+}
