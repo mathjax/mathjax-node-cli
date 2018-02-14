@@ -28,8 +28,9 @@ var mjAPI = require("mathjax-node-sre");
 
 var argv = require("yargs")
   .demand(1).strict()
-  .usage("Usage: mml2mml [options] 'math' > file.mml",{
-    speech: {
+    .usage("$0 [options] 'math' > file.mml")
+    .options({
+      speech: {
       boolean: true,
       default: true,
       describe: "include speech text"

@@ -27,8 +27,9 @@ var mjAPI = require("mathjax-node-sre");
 
 var argv = require("yargs")
   .demand(1).strict()
-  .usage("Usage: tex2svg [options] 'math' > file.svg",{
-    inline: {
+    .usage("$0 [options] 'math' > file.svg")
+    .options({
+      inline: {
       boolean: true,
       describe: "process as in-line TeX"
     },

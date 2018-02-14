@@ -31,8 +31,9 @@ var jsdom = require('jsdom').jsdom;
 
 var argv = require("yargs")
   .strict()
-  .usage("Usage: mml2svg-html5 [options] < input.html > output.html",{
-    localcache: {
+    .usage("$0 [options] < input.html > output.html")
+    .options({
+      localcache: {
       boolean: true,
       description: "don't use the global font cache"
     },
