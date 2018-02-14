@@ -26,7 +26,7 @@
   },
   "dependencies": {
     "mathjax-node-sre": "*",
-    "yargs": "3.*"
+    "yargs": ">=11.*"
   },
   "scripts": {
     "test": "tape test/*.js"

@@ -27,8 +27,9 @@ var mjAPI = require("mathjax-node-sre");
 
 var argv = require("yargs")
   .demand(1).strict()
-  .usage("Usage: am2svg [options] 'math' > file.svg",{
-    linebreaks: {
+    .usage("$0 [options] 'math' > file.svg")
+    .options({
+      linebreaks: {
       boolean: true,
       default: true,
       describe: "perform automatic line-breaking"

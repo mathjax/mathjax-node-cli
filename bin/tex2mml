@@ -27,8 +27,9 @@ var mjAPI = require("mathjax-node-sre");
 
 var argv = require("yargs")
   .demand(1).strict()
-  .usage("Usage: tex2mml [options] 'math' > file.mml",{
-    inline: {
+    .usage("$0 [options] 'math' > file.mml")
+    .options({
+      inline: {
       boolean: true,
       describe: "process as in-line TeX"
     },
