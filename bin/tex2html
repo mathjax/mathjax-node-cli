@@ -23,7 +23,7 @@
  *  limitations under the License.
  */
 
-var mjAPI = require("mathjax-node");
+var mjAPI = require("mathjax-node-sre");
 
 var argv = require("yargs")
   .demand(1).strict()
