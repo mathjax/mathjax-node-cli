@@ -55,7 +55,7 @@ var argv = require("yargs")
       describe: "extra MathJax extensions e.g. 'Safe,TeX/noUndefined'"
     },
     fontURL: {
-      default: "https://cdn.mathjax.org/mathjax/latest/fonts/HTML-CSS",
+      default: "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/fonts/HTML-CSS",
       describe: "the URL to use for web fonts"
     }
   })
